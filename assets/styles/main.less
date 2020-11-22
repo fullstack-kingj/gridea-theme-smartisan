@@ -1,0 +1,219 @@
+@import './lib/modern-normalize';
+@import './lib/colors';
+@import './abstracts/varibles';
+@import './lib/firacode';
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 58%;
+}
+
+body {
+  font: 14px/1.5em -apple-system,
+    "Fira Code",
+    BlinkMacSystemFont,
+    opensans,
+    Optima,
+    'Microsoft Yahei',
+    sans-serif;
+  color: @oc-gray-8;
+  background: @oc-gray-2;
+  letter-spacing: 1.0382;
+}
+
+a {
+  color: @oc-gray-8;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    color: @oc-gray-8;
+    font-weight: 500;
+  }
+}
+
+body,
+div,
+a,
+p,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td {
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  .main-content {
+    flex: 1;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.content {
+  flex: 1;
+  min-height: 100%;
+}
+
+.container {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+.panel {
+  background: @oc-white;
+  border: 1px solid @oc-gray-3;
+  border-radius: 7px;
+  margin: 25px 0;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, .07) 0 1px 3px;
+
+  .panel-title {
+    height: 57px;
+    border-bottom: 1px solid @oc-gray-2;
+    background: @oc-gray-1;
+    font-size: 16px;
+    line-height: 57px;
+    text-indent: 31px;
+    -webkit-box-shadow: 0 1px 1px 1px @oc-gray-0;
+    -moz-box-shadow: 0 1px 1px 1px @oc-gray-0;
+    box-shadow: 0 1px 1px 1px @oc-gray-0;
+    background-image: -moz-linear-gradient(top, #fafafa, #f4f4f4);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#f4f4f4));
+  }
+}
+
+.img-radius {
+  border-radius: 50%;
+}
+
+@import "./components/header.less";
+@import "./components/home.less";
+@import "./components/sidebar.less";
+@import "./components/post.less";
+@import "./components/archives.less";
+@import "./components/tags.less";
+@import "./components/tag.less";
+@import "./components/about.less";
+@import "./components/footer.less";
+@import "./lib/github.less";
+@import "./lib/katex.less";

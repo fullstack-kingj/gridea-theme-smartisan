@@ -1,0 +1,88 @@
+.post-container {
+  width: 888px;
+  float: left;
+
+  .post {
+    padding-top: 37px;
+    margin: 0 30px 35px;
+    border-top: 1px solid @oc-gray-2;
+
+    a:first-child:hover .post-title {
+      font-weight: 500;
+    }
+
+    .post-title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .post-info {
+      height: 15px;
+      font-size: 12px;
+      margin: 17px 0;
+
+      .post-time,
+      .post-tag {
+        color: @oc-gray-6;
+        line-height: 16px;
+      }
+
+      .post-tag:hover {
+        color: @oc-gray-7;
+      }
+    }
+
+    .post:first-child {
+      padding-top: 28px;
+      margin-bottom: 30px;
+      border-top: 0;
+    }
+
+    .post-feature-image {
+      display: block;
+      width: 100%;
+      padding-top: 32.6%;
+      border-radius: 2px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      transition: all 0.3s;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .post-abstract {
+      margin: 16px 0 0;
+      font-size: 14px;
+      line-height: 200%;
+
+      strong {
+        font-weight: bolder;
+      }
+
+      code {
+        padding: 0 3px;
+        margin: 0 2px;
+        background: rgba(195, 195, 195, 0.41);
+        font-size: 0.9em;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.pagination-container {
+  padding: 24px 32px 32px;
+  overflow: hidden;
+
+  .prev-page {
+    float: left;
+  }
+
+  .next-page {
+    float: right;
+  }
+}

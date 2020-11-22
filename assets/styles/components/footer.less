@@ -1,0 +1,71 @@
+.site-footer {
+  background: @oc-gray-0;
+  border-top: 1px solid @oc-gray-2;
+  margin-top: 50px;
+
+  .site-description {
+    margin-top: -50px;
+    text-align: center;
+    line-height: 50px;
+    color: @oc-gray-5;
+  }
+
+  .footer-menu {
+    display: none;
+    padding: 60px 0 55px;
+    border-bottom: 1px solid @oc-gray-2;
+  }
+
+  .footer-info {
+    font-size: 12px;
+    padding: 30px 0 60px;
+
+    .copyright,
+    .icp {
+      list-style: none;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin-right: -10px;
+        line-height: 12px;
+        color: @oc-gray-5;
+        padding: 0 10px;
+        border-left: 1px solid @oc-gray-5;
+
+        a {
+          color: @oc-gray-5;
+        }
+
+        a:hover {
+          color: @oc-gray-7;
+        }
+      }
+
+      li:first-child {
+        padding-left: 0;
+        border-left: none;
+      }
+    }
+
+    .icp {
+      margin-top: 10px;
+
+      .public-security {
+        position: relative;
+        padding-left: 35px;
+      }
+
+      .public-security::before {
+        position: absolute;
+        content: "";
+        top: -5px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        background: url(/media/images/icon-public-security.png) no-repeat;
+        background-size: 20px;
+      }
+    }
+  }
+}

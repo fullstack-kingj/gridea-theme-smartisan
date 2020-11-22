@@ -1,0 +1,46 @@
+.site-header {
+  background-color: @oc-white;
+  border-bottom: 1px solid @oc-gray-2;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .05);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .05);
+  height: 75px;
+  -webkit-transition: height .1s ease;
+  transition: height .1s ease;
+
+  .header-container,
+  .title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .title-container {
+    .avatar {
+      height: 45px;
+      margin-right: 10px;
+    }
+
+    .site-title {
+      margin-top: 5px;
+      line-height: 45px;
+      font-size: 24px;
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a.menu {
+      font-size: 16px;
+      padding: 28px 16px;
+    }
+  }
+}
