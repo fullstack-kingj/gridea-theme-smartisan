@@ -1,0 +1,25 @@
+<html>
+<head>
+  <%- include('./includes/head', { siteTitle: themeConfig.siteName }) %>
+</head>
+<body>
+  <div class="main">
+    <div class="main-content">
+      <%- include('./includes/header') %>
+
+      <div class="content container clearfix">
+        <%- include('./includes/post-list') %>
+
+        <%- include('./includes/sidebar') %>
+      </div>
+
+      <% if (posts.length > themeConfig.postPageSize) { %>
+      <%- include('./includes/pagination') %>
+      <% } %>
+
+      <%- include('./includes/footer') %>
+    </div>
+  </div>
+
+</body>
+</html>

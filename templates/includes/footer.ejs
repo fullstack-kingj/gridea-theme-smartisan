@@ -1,0 +1,29 @@
+<div class="site-footer">
+  <div class="container">
+    <div class="site-description"><%- themeConfig.siteDescription %></div>
+    <div class="footer-menu"></div>
+    <div class="footer-info">
+      <ul class="copyright clearfix">
+        <li><%- themeConfig.footerInfo %></li>
+        <li>Theme by <a href="https://github.com/fullstack-kingj/gridea-theme-smartisan">Smartisan</a></li>
+        <li>Designed by <a href="https://jinyunlong.cc">KingJ</a></li>
+      </ul>
+      <ul class="icp clearfix">
+        <% if (site.customConfig.icp) { %>
+        <li>
+          <a data-v-0e38ecc8="" href="http://beian.miit.gov.cn" target="_blank"><%- site.customConfig.icp %></a>
+        </li>
+        <% } %>
+        <% if (site.customConfig.security) { %>
+        <li class="public-security">
+          <a href="<%- site.customConfig.security_url %>" target="_blank"><%- site.customConfig.security %></a>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>

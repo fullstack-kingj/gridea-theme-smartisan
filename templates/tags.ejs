@@ -1,0 +1,31 @@
+<html>
+<head>
+  <%- include('./includes/head', { siteTitle: themeConfig.siteName }) %>
+</head>
+<body>
+  <div class="main">
+    <div class="main-content">
+      <%- include('./includes/header') %>
+
+      <div class="content container clearfix">
+        <div class="panel tags-container">
+          <h4 class="panel-title">标签列表</h4>
+          <ul class="tag-list">
+            <% tags.forEach((tag) => { %>
+            <li>
+              <a href="<%= tag.link %>">
+                <div class="tag" href="<%= tag.link %>"><%= tag.name %></div>
+                <span class="count"><%= tag.count %></span>
+              </a>
+            </li>
+            <% }); %>
+          </ul>
+        </div>
+      </div>
+
+      <%- include('./includes/footer') %>
+    </div>
+  </div>
+
+</body>
+</html>

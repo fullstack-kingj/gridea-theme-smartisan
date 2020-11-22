@@ -1,0 +1,129 @@
+<div class="sidebar">
+  <div class="panel slidebar-module">
+    <h4 class="panel-title">博主信息</h4>
+    <div class="blogger-panel">
+      <img class="avatar" src="<%= themeConfig.domain %>/images/avatar.png?v=<%= site.utils.now %>" alt="">
+      <h5 class="author"><%- site.customConfig.author %></h5>
+      <p class="description"><%- site.customConfig.description %></p>
+    </div>
+  </div>
+  <% if (site.customConfig.is_home_adv) { %>
+  <div class="panel slidebar-module">
+    <h4 class="panel-title">广告推荐</h4>
+    <ul class="recommend-list">
+      <% for (let i = 0; i < site.customConfig.add_home_adv.length; i++) { %>
+      <li>
+        <a href="<%- site.customConfig.add_home_adv[i].home_adv_link %>">
+          <img src="<%- site.customConfig.add_home_adv[i].home_adv_image %>"
+            alt="<%- site.customConfig.add_home_adv[i].home_adv_name %>">
+        </a>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+  <% } %>
+  <% if (site.customConfig.is_sns) { %>
+  <div class="panel slidebar-module offical-SNS">
+    <h4 class="panel-title">社交账号</h4>
+    <ul class="offical-SNS-list">
+      <% if (site.customConfig.sns_qq) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/qq.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a id="sns_qq" href="<%= site.customConfig.sns_qq %>" target="_blank">QQ</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_wechat) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/wechat.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a id="sns_wechat" href="<%= site.customConfig.sns_wechat %>" target="_blank">微信</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_github) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/github.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_github %>" target="_blank">GitHub</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_csdn) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/csdn.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_csdn %>" target="_blank">CSDN</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_juejin) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/juejin.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_juejin %>" target="_blank">掘金</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_sf) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/segmentfault.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_sf %>" target="_blank">思否</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_weibo) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/weibo.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_weibo %>" target="_blank">微博</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_toutiao) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/toutiao.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_toutiao %>" target="_blank">今日头条</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_zhihu) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/zhihu.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_zhihu %>" target="_blank">知乎</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_jianshu) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/jianshu.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_jianshu %>" target="_blank">简书</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_douban) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/douban.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_douban %>" target="_blank">豆瓣</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_bilibili) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/bilibili.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_bilibili %>" target="_blank">B站</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_facebook) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/facebook.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_facebook %>" target="_blank">Facebook</a>
+      </li>
+      <% } %>
+      <% if (site.customConfig.sns_twitter) { %>
+      <li
+        style="background: url('<%= themeConfig.domain %>/media/images/twitter.png') no-repeat 20px center;background-size: 28px 28px;-webkit-background-size: 28px 28px;">
+        <a href="<%= site.customConfig.sns_twitter %>" target="_blank">Twitter</a>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+  <div id="pop_dialog" class="pop-dialog">
+    <div class="dialog-mask"></div>
+    <div class="dialog-box">
+      <div class="dialog-title">
+        <h4 class="title"></h4>
+        <a id="btn_close" class="dialog-close"></a>
+      </div>
+      <div class="dialog-content">
+        <img src="#" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="<%= themeConfig.domain %>/media/scripts/sidebar.js"></script>
+  <% } %>
+</div>

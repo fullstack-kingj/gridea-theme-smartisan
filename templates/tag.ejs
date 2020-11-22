@@ -1,0 +1,30 @@
+<html>
+<head>
+  <%- include('./includes/head', { siteTitle: `${tag.name} | ${themeConfig.siteName}` }) %>
+</head>
+<body>
+  <div class="main">
+    <div class="main-content">
+      <%- include('./includes/header') %>
+
+      <div class="content container clearfix">
+        <div class="panel archives-container">
+          <h2 class="panel-title"><%- tag.name %></h2>
+          <% posts.forEach(function(post) { %>
+          <article class="post">
+            <a href="<%= post.link %>">
+              <h2 class="post-title"><%= post.title %></h2>
+              <small><%= post.dateFormat %></small>
+            </a>
+          </article>
+          <% }); %>
+        </div>
+
+        <%- include('./includes/pagination') %>
+      </div>
+
+      <%- include('./includes/footer') %>
+    </div>
+  </div>
+</body>
+</html>

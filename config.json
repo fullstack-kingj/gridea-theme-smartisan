@@ -1,0 +1,212 @@
+{
+  "name": "Smartisan",
+  "version": "0.0.1",
+  "author": "KingJ",
+  "repository": "https://github.com/fullstack-kingj/gridea-theme-smartisan",
+  "customConfig": [
+    {
+      "name": "logo",
+      "label": "网站LOGO",
+      "group": "网站配置",
+      "value": "",
+      "type": "picture-upload",
+      "note": "这是现在导航栏上的LOGO，头像配置是博主个人头像"
+    },
+    {
+      "name": "author",
+      "label": "个人昵称",
+      "group": "网站配置",
+      "value": "",
+      "type": "input",
+      "note": "输入你的昵称，例如“KingJ”"
+    },
+    {
+      "name": "description",
+      "label": "个性签名",
+      "group": "网站配置",
+      "value": "",
+      "type": "input",
+      "note": "输入你的签名，例如“追梦若冷，就用希望取暖。”"
+    },
+    {
+      "name": "icp",
+      "label": "ICP备案号",
+      "group": "网站配置",
+      "value": "",
+      "type": "input",
+      "note": "备案号，例如京ICP备19048576号-1"
+    },
+    {
+      "name": "security",
+      "label": "公安备案号",
+      "group": "网站配置",
+      "value": "",
+      "type": "input",
+      "note": "例如京公网安备11010502039854号"
+    },
+    {
+      "name": "security_url",
+      "label": "公安备案号URL",
+      "group": "网站配置",
+      "value": "",
+      "type": "input",
+      "note": "例如http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502039854"
+    },
+    {
+      "name": "is_home_adv",
+      "label": "开启首页广告",
+      "group": "广告配置",
+      "value": true,
+      "type": "switch",
+      "note": "开启后会在网站主页的侧边栏显示一个广告栏"
+    },
+    {
+      "name": "add_home_adv",
+      "label": "添加广告",
+      "group": "广告配置",
+      "value": [],
+      "arrayItems": [
+        {
+          "label": "名称",
+          "name": "home_adv_name",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "链接",
+          "name": "home_adv_link",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "图片",
+          "name": "home_adv_image",
+          "type": "picture-upload",
+          "value": ""
+        }
+      ],
+      "type": "array",
+      "note": ""
+    },
+    {
+      "name": "is_sns",
+      "label": "开启社交账号",
+      "group": "社交账号",
+      "value": true,
+      "type": "switch",
+      "note": "开启后会在网站主页的侧边栏显示一个社交账号栏"
+    },
+    {
+      "name": "sns_qq",
+      "label": "QQ账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "picture-upload",
+      "note": "上传QQ账号二维码"
+    },
+    {
+      "name": "sns_wechat",
+      "label": "微信账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "picture-upload",
+      "note": "上传微信账号二维码"
+    },
+    {
+      "name": "sns_github",
+      "label": "GitHub账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "GitHub个人主页地址"
+    },
+    {
+      "name": "sns_csdn",
+      "label": "CSDN账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "CSDN个人主页地址"
+    },
+    {
+      "name": "sns_juejin",
+      "label": "掘金账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "掘金个人主页地址"
+    },
+    {
+      "name": "sns_sf",
+      "label": "思否账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "思否(SegmentFault)个人主页地址"
+    },
+    {
+      "name": "sns_weibo",
+      "label": "微博账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "微博个人主页地址"
+    },
+    {
+      "name": "sns_toutiao",
+      "label": "今日头条账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "今日头条个人主页地址"
+    },
+    {
+      "name": "sns_zhihu",
+      "label": "知乎账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "知乎个人主页地址"
+    },
+    {
+      "name": "sns_jianshu",
+      "label": "简书账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "简书个人主页地址"
+    },
+    {
+      "name": "sns_douban",
+      "label": "豆瓣账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "豆瓣个人主页地址"
+    },
+    {
+      "name": "sns_bilibili",
+      "label": "Bilibili账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "Bilibili个人主页地址"
+    },
+    {
+      "name": "sns_facebook",
+      "label": "Facebook账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "Facebook个人主页地址"
+    },
+    {
+      "name": "sns_twitter",
+      "label": "Twitter账号",
+      "group": "社交账号",
+      "value": "",
+      "type": "input",
+      "note": "Twitter个人主页地址"
+    }
+  ]
+}

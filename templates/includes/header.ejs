@@ -1,0 +1,27 @@
+<div class="site-header">
+  <div class="container header-container">
+    <a class="title-container" href="<%= themeConfig.domain %>">
+      <% if (!site.customConfig.logo) { %>
+      <img class="avatar" src="<%= themeConfig.domain %>/images/avatar.png?v=<%= site.utils.now %>" alt="">
+      <% } else { %>
+      <img class="avatar" src="<%= site.customConfig.logo %>" alt="">
+      <% } %>
+      <h1 class="site-title">
+        <%= themeConfig.siteName %>
+      </h1>
+    </a>
+    <div class="menu-container">
+      <% menus.forEach(function(menu) { %>
+      <% if (menu.openType === 'External') { %>
+      <a href="<%= menu.link %>" class="menu" target="_blank">
+        <%= menu.name %>
+      </a>
+      <% } else { %>
+      <a href="<%= menu.link %>" class="menu">
+        <%= menu.name %>
+      </a>
+      <% } %>
+      <% }); %>
+    </div>
+  </div>
+</div>
