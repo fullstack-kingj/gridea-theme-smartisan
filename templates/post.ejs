@@ -11,15 +11,15 @@
         <div class="panel post-container">
           <h4 class="panel-title">文章内容</h4>
           <article class="post">
-            <h2 class="post-title">
+            <h1 class="post-title">
               <%= post.title %>
-            </h2>
+            </h1>
             <div class="post-info">
               <time class="post-time">
                 发表于 · <%= post.dateFormat %> ·
               </time>
               <% post.tags.forEach(function(tag) { %>
-              <a href="<%= tag.link %>" class="post-tags">
+              <a href="<%= tag.link %>" class="post-tag">
                 # <%= tag.name %>
               </a>
               <% }); %>
@@ -36,7 +36,7 @@
 
           <div class="pagination-btn">
             <% if (post.prevPost && !post.hideInList) { %>
-            <a class="prev-post" href="<%= post.prevPost.link %>">下一篇</a>
+            <a class="prev-post" href="<%= post.prevPost.link %>">上一篇</a>
             <% } %>
 
             <% if (post.nextPost && !post.hideInList) { %>
