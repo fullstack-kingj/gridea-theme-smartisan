@@ -56,7 +56,7 @@
       "name": "is_mp",
       "label": "开启公众号二维码",
       "group": "关注公众号",
-      "value": "",
+      "value": false,
       "type": "switch",
       "note": "开启后会在底部信息栏中显示微信公众号二维码"
     },
@@ -72,7 +72,7 @@
       "name": "is_reward",
       "label": "开启打赏功能",
       "group": "打赏功能",
-      "value": "",
+      "value": false,
       "type": "switch",
       "note": "开启后会在底部信息栏中显示微信和支付宝支付二维码"
     },
@@ -96,7 +96,7 @@
       "name": "is_sns",
       "label": "开启社交账号",
       "group": "社交账号",
-      "value": true,
+      "value": false,
       "type": "switch",
       "note": "开启后会在网站主页的侧边栏显示一个社交账号栏"
     },
@@ -216,7 +216,7 @@
       "name": "is_friends",
       "label": "开启友情链接",
       "group": "友情链接",
-      "value": true,
+      "value": false,
       "type": "switch",
       "note": "开启后会在底部信息栏中显示友情链接列表"
     },
@@ -246,7 +246,7 @@
       "name": "is_home_adv",
       "label": "开启首页广告",
       "group": "广告配置",
-      "value": true,
+      "value": false,
       "type": "switch",
       "note": "开启后会在网站主页的侧边栏显示一个广告栏"
     },
