@@ -34,13 +34,13 @@
             </div>
           </article>
 
-          <div class="pagination-btn">
+          <div class="pagination-container">
             <% if (post.prevPost && !post.hideInList) { %>
-            <a class="prev-post" href="<%= post.prevPost.link %>">上一篇</a>
+            <a class="prev-btn" href="<%= post.prevPost.link %>">上一篇</a>
             <% } %>
 
             <% if (post.nextPost && !post.hideInList) { %>
-            <a class="next-post" href="<%= post.nextPost.link %>">下一篇</a>
+            <a class="next-btn" href="<%= post.nextPost.link %>">下一篇</a>
             <% } %>
           </div>
 

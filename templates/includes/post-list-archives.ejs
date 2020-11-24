@@ -1,6 +1,6 @@
 <% let years = []; posts.forEach((item) => { const year = item.date.substring(0, 4); if (!years.includes(year)) { years.push(year); } }); %>
 
-<div class="container clearfix">
+<div class="content container clearfix">
   <% years.forEach(function(year) { %>
   <div class="panel archives-container">
     <h2 class="panel-title"><%- year %></h2>
@@ -16,4 +16,13 @@
     <% }); %>
   </div>
   <% }); %>
+
+  <div class="archives-pagination pagination-container">
+    <% if (pagination.prev) { %>
+    <a href="<%= pagination.prev %>" class="prev-btn">上一页</a>
+    <% } %>
+    <% if (pagination.next) { %>
+    <a href="<%= pagination.next %>" class="next-btn">下一页</a>
+    <% } %>
+  </div>
 </div>
