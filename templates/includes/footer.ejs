@@ -1,7 +1,46 @@
 <div class="site-footer">
   <div class="container">
     <div class="site-description"><%- themeConfig.siteDescription %></div>
-    <div class="footer-menu"></div>
+    <% if (site.customConfig.is_reward || site.customConfig.is_friends || site.customConfig.is_mp) { %>
+    <div class="footer-menu">
+      <% if (site.customConfig.is_reward) { %>
+      <ul class="give-areward">
+        <% if (site.customConfig.weixin_reward) { %>
+        <li>
+          <h4 class="footer-title">微信支付二维码</h4>
+          <img class="footer-img" src="<%= site.customConfig.weixin_reward %>" alt="微信支付二维码">
+        </li>
+        <% } %>
+        <% if (site.customConfig.zhifubao_reward) { %>
+        <li>
+          <h4 class="footer-title">支付宝支付二维码</h4>
+          <img class="footer-img" src="<%= site.customConfig.zhifubao_reward %>" alt="支付宝支付二维码">
+        </li>
+        <% } %>
+      </ul>
+      <% } %>
+      <% if (site.customConfig.is_friends) { %>
+      <div class="information">
+        <h4 class="footer-title">友情链接</h4>
+        <ul class="friends">
+          <% for (let i = 0; i < site.customConfig.add_friend.length; i++) { %>
+          <li class="friend-item">
+            <a href="<%= site.customConfig.add_friend[i].friend_link %>">
+              <%= site.customConfig.add_friend[i].friend_name %>
+            </a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+      <% } %>
+      <% if (site.customConfig.is_mp) { %>
+      <div class="media-platform">
+        <h4 class="footer-title">微信公众号</h4>
+        <img class="footer-img" src="<%= site.customConfig.media_platform %>" alt="公众号">
+      </div>
+      <% } %>
+    </div>
+    <% } %>
     <div class="footer-info">
       <ul class="copyright clearfix">
         <li>Powered by <a href="https://github.com/getgridea/gridea">Gridea</a></li>

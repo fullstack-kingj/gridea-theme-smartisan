@@ -11,9 +11,88 @@
   }
 
   .footer-menu {
-    display: none;
     padding: 60px 0 55px;
     border-bottom: 1px solid @oc-gray-2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .give-areward {
+      // float: left;
+      list-style: none;
+      overflow: hidden;
+
+      li {
+        float: left;
+      }
+
+      li:first-of-type {
+        margin-right: 30px;
+      }
+    }
+
+    .give-areward::after {
+      content: "如果我写的内容帮助到了你，请打赏给一些鼓励吧~";
+      display: block;
+      clear: both;
+      padding-top: 10px;
+      color: #969696;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .information {
+      width: 500px;
+      min-width: 500px;
+
+      .friends {
+        list-style: none;
+        overflow: hidden;
+
+        .friend-item {
+          float: left;
+          width: 100px;
+          border-right: 1px solid @oc-gray-5;
+          text-align: center;
+          margin: 9px 0;
+          line-height: 12px;
+          font-size: 12px;
+
+          a {
+            color: @oc-gray-5;
+          }
+
+          a:hover {
+            color: @oc-gray-7;
+            font-weight: 400;
+          }
+        }
+
+        .friend-item:nth-of-type(5n+1) {
+          border-left: 1px solid @oc-gray-5;
+        }
+      }
+    }
+
+    .media-platform {
+      // float: right;
+    }
+  }
+
+  .footer-title {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #646464;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .footer-img {
+    display: block;
+    width: 160px;
   }
 
   .footer-info {

@@ -53,40 +53,44 @@
       "note": "例如http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502039854"
     },
     {
-      "name": "is_home_adv",
-      "label": "开启首页广告",
-      "group": "广告配置",
-      "value": true,
+      "name": "is_mp",
+      "label": "开启公众号二维码",
+      "group": "关注公众号",
+      "value": "",
       "type": "switch",
-      "note": "开启后会在网站主页的侧边栏显示一个广告栏"
+      "note": "开启后会在底部信息栏中显示微信公众号二维码"
     },
     {
-      "name": "add_home_adv",
-      "label": "添加广告",
-      "group": "广告配置",
-      "value": [],
-      "arrayItems": [
-        {
-          "label": "名称",
-          "name": "home_adv_name",
-          "type": "input",
-          "value": ""
-        },
-        {
-          "label": "链接",
-          "name": "home_adv_link",
-          "type": "input",
-          "value": ""
-        },
-        {
-          "label": "图片",
-          "name": "home_adv_image",
-          "type": "picture-upload",
-          "value": ""
-        }
-      ],
-      "type": "array",
-      "note": ""
+      "name": "media_platform",
+      "label": "微信公众号二维码",
+      "group": "关注公众号",
+      "value": "",
+      "type": "picture-upload",
+      "note": "上传微信公众号的二维码"
+    },
+    {
+      "name": "is_reward",
+      "label": "开启打赏功能",
+      "group": "打赏功能",
+      "value": "",
+      "type": "switch",
+      "note": "开启后会在底部信息栏中显示微信和支付宝支付二维码"
+    },
+    {
+      "name": "weixin_reward",
+      "label": "微信支付二维码",
+      "group": "打赏功能",
+      "value": "",
+      "type": "picture-upload",
+      "note": "上传微信支付的二维码"
+    },
+    {
+      "name": "zhifubao_reward",
+      "label": "支付宝支付二维码",
+      "group": "打赏功能",
+      "value": "",
+      "type": "picture-upload",
+      "note": "上传支付宝支付的二维码"
     },
     {
       "name": "is_sns",
@@ -207,6 +211,72 @@
       "value": "",
       "type": "input",
       "note": "Twitter个人主页地址"
+    },
+    {
+      "name": "is_friends",
+      "label": "开启友情链接",
+      "group": "友情链接",
+      "value": true,
+      "type": "switch",
+      "note": "开启后会在底部信息栏中显示友情链接列表"
+    },
+    {
+      "name": "add_friend",
+      "label": "添加友情链接",
+      "group": "友情链接",
+      "value": [],
+      "arrayItems": [
+        {
+          "label": "名称",
+          "name": "friend_name",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "链接",
+          "name": "friend_link",
+          "type": "input",
+          "value": ""
+        }
+      ],
+      "type": "array",
+      "note": "友情链接添加的数量建议最多为 30 个，再多的话可能会影响布局~"
+    },
+    {
+      "name": "is_home_adv",
+      "label": "开启首页广告",
+      "group": "广告配置",
+      "value": true,
+      "type": "switch",
+      "note": "开启后会在网站主页的侧边栏显示一个广告栏"
+    },
+    {
+      "name": "add_home_adv",
+      "label": "添加广告",
+      "group": "广告配置",
+      "value": [],
+      "arrayItems": [
+        {
+          "label": "名称",
+          "name": "home_adv_name",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "链接",
+          "name": "home_adv_link",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "图片",
+          "name": "home_adv_image",
+          "type": "picture-upload",
+          "value": ""
+        }
+      ],
+      "type": "array",
+      "note": ""
     }
   ]
 }
