@@ -8,19 +8,19 @@
 
 ### 主页
 
-![主页效果图](previews/index.png)
+![主页效果图](./previews/index.png)
 
 ### 归档页面
 
-![归档页面效果图](previews/archive.png)
+![归档页面效果图](./previews/archive.png)
 
 ### 标签页面
 
-![标签页面效果图](previews/tags.png)
+![标签页面效果图](./previews/tags.png)
 
 ### 文章页面
 
-![文章页面效果图](previews/post.png)
+![文章页面效果图](./previews/post.png)
 
 ## 主题功能介绍
 
