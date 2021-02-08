@@ -53,6 +53,14 @@
       "note": "例如http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502039854"
     },
     {
+      "name": "is_sitename",
+      "label": "是否隐藏网站名称",
+      "group": "网站配置",
+      "value": true,
+      "type": "switch",
+      "note": "关闭后将不再显示网站名称"
+    },
+    {
       "name": "is_mp",
       "label": "开启公众号二维码",
       "group": "关注公众号",
